@@ -61,6 +61,7 @@ def webServer(port=13331):
             outputdata = b"HTTP/1.1 404 Not Found\r\n"
             outputdata += b"Connection: close\r\n"
             outputdata += b"Content-Type: text/html; charset=UTF-8\r\n"
+            outputdata += b"Server: DQServer\r\n"
             outputdata += b"\r\n"
             outputdata += b"<html><body><h1>404 Not Found</h1></body></html>"
             connectionSocket.send(outputdata)
