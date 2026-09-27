@@ -32,6 +32,7 @@ def webServer(port=13331):
                      # Fill in start
             outputdata = b"HTTP/1.1 200 OK\r\n"
             outputdata += b"Connection: close\r\n"
+            outputdata += b"Server: DQServer\r\n"
 
 
                      # Content-Type is an example on how to send a header as bytes. There are more!
